@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:fixed;inset:0;background:#090b19" role="document" aria-label="Orbit browser">
+  <title>Orbit</title>
+  <desc>An embedded view of Orbit, with a direct link for full browser compatibility.</desc>
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="shell">
+      <style>
+        * { box-sizing: border-box; }
+        .shell { height:100vh; height:100dvh; display:flex; flex-direction:column; color:#ece9ff; background:#090b19; font:14px system-ui,sans-serif; }
+        .toolbar { display:flex; align-items:center; flex-wrap:wrap; gap:12px; padding:10px 16px; background:#101326; border-bottom:1px solid #292844; }
+        .brand { display:flex; align-items:center; gap:8px; font-size:18px; font-weight:700; letter-spacing:.03em; }
+        .planet { display:inline-block; width:20px; height:20px; border-radius:50%; background:linear-gradient(140deg,#dbceff,#9065ef 48%,#433294); box-shadow:0 0 14px #8664f066; }
+        .note { flex:1; color:#b4b4cd; font-size:12px; }
+        a { color:white; background:#6748cf; padding:8px 12px; border-radius:8px; text-decoration:none; font-size:13px; }
+        a:hover { background:#7b59e3; }
+        a:focus-visible { outline:3px solid #d3c3ff; outline-offset:3px; }
+        iframe { display:block; width:100%; flex:1; min-height:0; border:0; background:#090b19; }
+        @media(max-width:560px) { .note { order:3; flex-basis:100%; } .toolbar a { margin-left:auto; } }
+      </style>
+      <header class="toolbar">
+        <span class="brand"><span class="planet" aria-hidden="true"></span>Orbit</span>
+        <span class="note">If browsing stalls or the page stays blank, open Orbit directly.</span>
+        <a href="https://orbit-proxy.chickenkiller.com/" target="_blank" rel="noopener noreferrer">Open Orbit directly &#8599;</a>
+      </header>
+      <iframe title="Orbit" src="https://orbit-proxy.chickenkiller.com/" allow="fullscreen; cross-origin-isolated" referrerpolicy="no-referrer"></iframe>
+    </div>
+  </foreignObject>
+</svg>
